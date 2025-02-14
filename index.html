@@ -1,0 +1,199 @@
+<html>
+  <head>
+    <title>Product Card</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        line-height: 18px;
+        box-sizing: border-box;
+      }
+      /* this is fo check */
+      #card {
+        width: 50%;
+        height: 500px;
+        background-color: honeydew;
+        margin: 100px auto;
+        padding: 20px;
+      }
+
+      #preview {
+        float: left;
+        height: 100%;
+        width: 40%;
+      }
+
+      #preview > img {
+        width: 100%;
+        height: 70%;
+        border-radius: 10px;
+        box-shadow: 5px 3px 10px grey;
+      }
+
+      #preview > p {
+        display: inline-block;
+        width: 100%;
+        height: 10%;
+        font-size: 30px;
+        font-weight: 600;
+        padding: 18px 24px;
+      }
+
+      #discount-price {
+        text-decoration: line-through;
+        font-size: 10px;
+        font-weight: 300;
+        letter-spacing: 0.1px;
+        word-spacing: 0.1px;
+      }
+
+      .color-options {
+        width: 100%;
+        height: 20%;
+        overflow-x: scroll;
+        margin-top: 10px;
+      }
+
+      .color-options > img {
+        width: 29%;
+        height: 100%;
+        margin: 3px;
+        padding: 12px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px grey;
+      }
+
+      #about {
+        float: right;
+        height: 100%;
+        width: 60%;
+      }
+
+      #about > h1 {
+        display: inline-block;
+        width: 100%;
+        height: 8%;
+        text-align: center;
+        font-size: 30px;
+        word-spacing: 1px;
+        letter-spacing: 2px;
+        padding: 8px 0px;
+      }
+
+      #about > p {
+        width: 100%;
+        height: 52%;
+        padding: 5px 48px;
+        line-height: 22px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin-top: 10px;
+      }
+
+      #about > table {
+        width: 100%;
+        height: 40%;
+        padding: 20px;
+        text-align: left;
+        font-size: 12px;
+        font-weight: 300;
+        margin-left: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <article id="card">
+      <div id="preview">
+        <img
+          src="https://m.media-amazon.com/images/I/61sFBIcJAqL._SX679_.jpg"
+          alt="Smart Watch"
+        />
+
+        <div class="color-options">
+          <img
+            src="https://m.media-amazon.com/images/I/61QE-MSXBtL._SX679_.jpg"
+            alt="Blue SmartWatch"
+          />
+          <img
+            src="https://m.media-amazon.com/images/I/61zBJcICfFL._SX679_.jpg"
+            alt="Grey SmartWatch"
+          />
+          <img
+            src="https://m.media-amazon.com/images/I/61C+LPKx+4L._SX679_.jpg"
+            alt="Green SmartWatch"
+          />
+          <img
+            src="https://m.media-amazon.com/images/I/61VvQWExD0L._SX679_.jpg"
+            alt="Navy Blue Smartwatch"
+          />
+          <img
+            src="https://m.media-amazon.com/images/I/61PtYFh3dLL._SX679_.jpg"
+            alt="Wine SmartWatch"
+          />
+          <img
+            src="https://m.media-amazon.com/images/I/61OhVH-5zvL._SX679_.jpg"
+            alt="Pink SmartWatch"
+          />
+        </div>
+        <p><span id="discount-price">M.R.P ₹11,999.00</span> ₹7,199.50</p>
+      </div>
+
+      <div id="about">
+        <h1>Fire Bolt Ninja Smartwatch</h1>
+
+        <p>
+          Fire-Boltt Ninja smartwatches offer a budget-friendly option with a
+          sleek design, HD touchscreen, and essential health tracking features
+          like heart rate and SpO2 monitoring. They provide multiple sports
+          modes, smart notifications, and decent battery life, typically lasting
+          5-7 days. While the build quality is lightweight and durable, the
+          accuracy of health sensors and connectivity may not match premium
+          brands.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Features</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Model</th>
+              <td>Ninja Call Pro, Series 8</td>
+            </tr>
+
+            <tr>
+              <th>Display</th>
+              <td>1.69-inch HD</td>
+            </tr>
+
+            <tr>
+              <th>Battery Life</th>
+              <td>7 days, 10 hours on call</td>
+            </tr>
+
+            <tr>
+              <th>Connectivity</th>
+              <td>Bluetooth, Wi-Fi, GPS, or LTE support</td>
+            </tr>
+
+            <tr>
+              <th>Water Resistance</th>
+              <td>IP68</td>
+            </tr>
+
+            <tr>
+              <th>Sports Modes</th>
+              <td>120+ modes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+  </body>
+</html>
